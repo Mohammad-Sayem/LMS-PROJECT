@@ -1,0 +1,67 @@
+
+
+{% extends 'base.html' %}
+{% block body %}
+<div class="container-right">
+<div class="changecontainor1"> 
+    <form action="" method='post'>  
+        {% csrf_token %}
+         {% comment %} {{form}} {% endcomment %}
+     
+    <h3 class="lheading">
+         RESET PASSWORD
+    </h3>
+    <br>
+
+    <div>
+        <div class="lemail1">
+            <h5>Old Password</h5>
+        </div>
+        <div class="lemail2">
+            <i class=" icon fa-sharp fa-solid fa-lock"></i>
+            <input type="password" name="old_password" id="id_old_password" placeholder="Old Password">
+            <hr>
+        </div>
+    </div>
+    <br>
+
+
+
+    <div>
+        <div class="lpwd1">
+            <h5>New password</h5>
+        </div>
+        <div class="lpwd2">
+            <i class=" icon fa-sharp fa-solid fa-lock"></i>
+            <input type="password" name="new_password1" id="id_new_password1" placeholder="New Password">
+            <hr>
+        </div>
+    </div>
+
+
+
+    <div class="main">
+        <div class="changepwd1">
+            <h5>Re-Enter New password</h5>
+        </div>
+        <div class="changepwd2">
+            <i class=" icon fa-sharp fa-solid fa-lock"></i>
+            <input type="password" name="new_password2" id="id_new_password2" placeholder="Re-Enter New password">
+            <hr>
+        </div>
+    </div>
+
+    <div class="changelogin">
+       
+    <button type='submit'>Change</button>
+    </div>
+   
+</form>
+
+ </div> 
+</div>
+
+
+
+    
+{% endblock body %}

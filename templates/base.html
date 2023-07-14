@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="static\style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>LMS</title>
+</head>
+
+<body>
+    <!-- left side starts ---------------- -->
+    <div class="container-left">
+
+        <img src="https://img.freepik.com/free-vector/code-logo-template-gradient-design_23-2148810395.jpg" alt="">
+        <div>
+            <h5><a href="/"><i class="fa fa-dashboard"></i>Dashboard</a> </h5>
+            <h5> <a href="/messages"><i class="fa fa-comment"></i>Messages</a></h5>
+            <h5><a href="/courses"> <i class="fa fa-tasks"></i>My Courses</a></h5>
+            <h5><a href="/settings"> <i class="fa-solid fa-gear"></i>Settings</a> </h5>
+            <h5><a href="/logoutt"> <i class="fa-solid fa-power-off"></i>Logout</a></h5>
+        </div>
+    </div>
+    <!-- left side ends ---------------- -->
+
+    
+    
+    <div class="navbar">
+        <div class="menu" onclick="toggle()">
+            <i class="fa fa-bars"></i>
+        </div>
+        <h4>Welcome,{{request.user}}</h4>
+    </div>
+
+        {% block body %}
+
+        {% endblock body %}
+   
+  
+
+
+    <script src="static/app.js"></script>
+
+
+</body>
+
+</html>
